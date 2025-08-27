@@ -1,14 +1,12 @@
 #include "random.h"
 
-#define MAX_CHAR 25
-#define MIN_CHAR 0
-
+#define NUM_CHAR 26
 
 char rand_char() {
-    return 'a' + (rand() % (MAX_CHAR - MIN_CHAR));
+    return 'a' + (rand() % NUM_CHAR);
 }
 
-void rand_str(char *s, size_t size) {
+void rand_string(char *s, size_t size) {
     for (int i = 0; i < size - 1; ++i)
         s[i] = rand_char();
 
