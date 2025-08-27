@@ -7,8 +7,8 @@ char rand_char() {
 }
 
 void rand_string(char *s, size_t size) {
-    for (int i = 0; i < size - 1; ++i)
+    for (int i = 0; i < size; ++i)
         s[i] = rand_char();
 
-    s[size - 1] = '\0';
+    s[size] = '\0';
 }
